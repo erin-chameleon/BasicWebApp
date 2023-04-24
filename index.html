@@ -74,9 +74,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function resetVariables()
 	{
-		exampleVariable1 = 0;
-		exampleVariable2 = 0;
-		exampleVariable3 = 0;
+		var newdiv = document.getElementById("finalcontent") 
+		while(newdiv.firstChild){
+		    newdiv.removeChild(newdiv.firstChild);
+		}
 	}
 	
 	function insertImages()
