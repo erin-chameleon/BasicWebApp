@@ -47,12 +47,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		smileyImage.classList.add("imgclass");
 		if (exampleVariable1 == 1) {
 			smileyImage.src = "https://i.imgur.com/koukHFg.jpg";
+			document.getElementById("endResults").innerHTML = "You are Kermit the Frog!";
 		} else if (exampleVariable1 == 2) {
 			smileyImage.src = "https://i.imgur.com/vbM0OIZ.jpg"; 
+			document.getElementById("endResults").innerHTML = "You are Pepe the Frog!";
 		} else if (exampleVariable1 == 3) {
 			smileyImage.src = "https://i.imgur.com/48XsTup.png";
+			document.getElementById("endResults").innerHTML = "You are Prince Naveen (as a frog)!";
 		} else if (exampleVariable1 == 4) {
 			smileyImage.src = "https://i.imgur.com/nqlv1iK.jpg";
+			document.getElementById("endResults").innerHTML = "You are Frog from Frog and Toad!";
 		}
 		
 		document.getElementById("finalcontent").appendChild(smileyImage);
