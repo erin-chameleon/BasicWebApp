@@ -83,6 +83,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	}
 	
+	function resetVariables2()
+	{
+		var newdiv = document.getElementById("Main") 
+	    	newdiv.removeChild(newdiv.lastChild);
+		
+	}
+	
 	function insertImages()
 	{
 		var smileyImage = document.createElement("img");
@@ -198,7 +205,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
-	<a href="#content" onclick="resetVariables()" class="w3-grey">Return to Home Page</a>
+	<a href="#content" onclick="resetVariables2()" class="w3-grey">Return to Home Page</a>
 	</center>
 									       
 </div>
@@ -217,7 +224,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
-	<a href="#content" onclick="resetVariables()" class="w3-grey">Return to Home Page</a>
+	<a href="#content" onclick="resetVariables2()" class="w3-grey">Return to Home Page</a>
 	</center>
 									       
 </div>	  
