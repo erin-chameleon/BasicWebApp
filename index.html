@@ -43,16 +43,31 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
     		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		var smileyImage = document.createElement("img");
+		if (exampleVariable1 == 1) {
+			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		} else if (exampleVariable1 == 2) {
+			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		} else if (exampleVariable1 == 3) {
+			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		} else if (exampleVariable1 == 4) {
+			smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		}
 		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
+		document.getElementById("Main").appendChild(smileyImage);
+		document.getElementById("Main2").innerHTML = "This is the type of frog you are!";
+
 		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
+		console.log("Exfunc1 function was run.");
 	}
 	
 	function exampleResultsFunction()
 	{
+		var smileyImage = document.createElement("img");
+		smileyImage.src = "https://i.imgur.com/jctdkSS.png";
+		document.getElementById("finalcontent").appendChild(smileyImage);
+		document.getElementById("endresults").innerHTML = "This is the type of frog you are!";
+
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
 		resetVariables();
 	}
@@ -152,9 +167,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  <option value=2>blue</option>
 		  <option value=3>yellow</option>
 		  <option value=4>orange</option>
-		</select></br>
-	  	<label for="secondInputBox">How are you feeling right now?</label><br>
-		
+		</select></br>		
 		<br><br><br>
 	</form>
       
@@ -223,10 +236,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
 	  </div>
   
-  <a class="w3-btn w3-black" onclick="exampleResultsFunction()">Click me!
-    <br>
-    <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" width="30" alt="spongebob">
-  </a>
+  
   <a href="#content" onclick="resetVariables()" class="w3-btn w3-black">Return to Home Page</a>
     
   </center>
