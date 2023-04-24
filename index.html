@@ -85,24 +85,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function insertImages()
 	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		for(let n=0; n<exampleVariable1 ;n++)
-		{
-			var smileyImage = document.createElement("img");
-			smileyImage.src = "https://i.imgur.com/olyt3su.png";
-			document.getElementById("Main").appendChild(smileyImage);
-			
-		}
-		
-		for(let n2=0; n2<exampleVariable2 ;n2++)
-		{
-			var frownyImage = document.createElement("img");
-			frownyImage.src = "https://i.imgur.com/JuEe1ij.png";
-			document.getElementById("Main").appendChild(frownyImage);
-		}
-		
-		document.getElementById("Main2").innerHTML = "You inserted " + exampleVariable1 + " smiley faces and " + exampleVariable2 + " frowny faces!";
+		var smileyImage = document.createElement("img");
+		smileyImage.src = "https://i.imgur.com/olyt3su.png";
+		document.getElementById("Main").appendChild(smileyImage);
+		document.getElementById("Main2").innerHTML = "You are Prince Naveen (as a human)!";
+	}
+	
+	function insertImages2()
+	{
+		var smileyImage = document.createElement("img");
+		smileyImage.src = "https://i.imgur.com/JuEe1ij.png";
+		document.getElementById("Main").appendChild(smileyImage);
+		document.getElementById("Main2").innerHTML = "You are Toad from Frog and Toad!";
 	}
 </script>
   
@@ -183,7 +177,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       
   <a href="#finalpage" onclick="exampleFunction1()" class="w3-btn w3-grey">Take me to my results!</a>
   <a href="#alternate" onclick="insertImages()" class="w3-btn w3-grey">I don't want to be a frog!</a>
-  <a href="#alternate2" onclick="insertImages()" class="w3-btn w3-grey">Mystery Box</a>
+  <a href="#alternate2" onclick="insertImages2()" class="w3-btn w3-grey">Mystery Box</a>
 
     
   </center>
