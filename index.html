@@ -100,6 +100,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function insertImages()
 	{
 		var smileyImage = document.createElement("img");
+		smileyImage.classList.add("imgclass");
 		smileyImage.src = "https://i.imgur.com/olyt3su.png";
 		document.getElementById("Main").appendChild(smileyImage);
 		document.getElementById("Main2").innerHTML = "You are Prince Naveen (as a human)!";
@@ -108,6 +109,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function insertImages2()
 	{
 		var smileyImage = document.createElement("img");
+		smileyImage.classList.add("imgclass");
 		smileyImage.src = "https://i.imgur.com/JuEe1ij.png";
 		document.getElementById("Main3").appendChild(smileyImage);
 		document.getElementById("Main4").innerHTML = "You are Toad from Frog and Toad!";
