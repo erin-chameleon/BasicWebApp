@@ -51,28 +51,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Addition function was run.");
 	}
 	
-	function exampleFunction2()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 * exampleVariable2;
-		
-		alert("You just ran a multiplication function!");
-		console.log("Multiplication function was run.");
-	}
-	
-	function exampleFunction3()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
-	}
-	
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -176,22 +154,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  <option value=4>orange</option>
 		</select></br>
 	  	<label for="secondInputBox">How are you feeling right now?</label><br>
-		<!--User input box.-->
-	  <select id="secondInputBox">
-		  <option value=1>happy</option>
-		  <option value=2>sad</option>
-		  <option value=3>mean</option>
-		  <option value=4>funny</option>
-	  </select></br>
 		
 		<br><br><br>
 	</form>
       
-  <a href="#finalpage" onclick="exampleFunction1()" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2()" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3()" class="w3-btn w3-grey">Button 3</a>
-  <a href="#alternate" onclick="insertImages()" class="w3-btn w3-grey">Special Surprise</a>
-  <a href="#alternate2" onclick="insertImages()" class="w3-btn w3-grey">Special Surprise</a>
+  <a href="#finalpage" onclick="exampleFunction1()" class="w3-btn w3-grey">Take me to my results!</a>
+  <a href="#alternate" onclick="insertImages()" class="w3-btn w3-grey">I don't want to be a frog!</a>
+  <a href="#alternate2" onclick="insertImages()" class="w3-btn w3-grey">Mystery Box</a>
 
     
   </center>
